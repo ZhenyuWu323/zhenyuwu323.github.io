@@ -261,3 +261,31 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+// About page: compact Education / Interests block pulled from _data/cv.yml
+
+.about-cv {
+  font-size: 0.85rem;
+  line-height: 1.4;
+
+  .about-cv-title {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
+
+  .about-cv-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .about-cv-date {
+    color: var(--global-text-color-light);
+    margin-left: 0.25rem;
+    white-space: nowrap;
+  }
+}

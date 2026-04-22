@@ -44,7 +44,47 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix">
+      {{ content }}
+
+      {% assign about_edu = site.data.cv.cv.sections.Education %}
+      {% assign about_interests = site.data.cv.cv.sections.Interests %}
+      {% if about_edu or about_interests %}
+        <div class="about-cv row mt-3">
+          {% if about_edu %}
+            <div class="col-sm-6">
+              <h6 class="about-cv-title">Education</h6>
+              <ul class="about-cv-list">
+                {% for entry in about_edu %}
+                  <li>
+                    {% capture study_type %}{% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}{% endcapture %}
+                    {% capture start_date %}{% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}{% endcapture %}
+                    {% capture end_date %}{% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}{% endcapture %}
+                    {% assign start_year = start_date | split: '-' | first %}
+                    {% assign end_year = end_date | split: '-' | first | default: 'Present' %}
+                    <strong>{{ entry.institution }}</strong><br>
+                    {% if study_type != '' %}{{ study_type }}{% if entry.area %}, {{ entry.area }}{% endif %}{% elsif entry.area %}{{ entry.area }}{% endif %}
+                    {% if start_year != '' %}<span class="about-cv-date">({{ start_year }}–{{ end_year }})</span>{% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+          {% if about_interests %}
+            <div class="col-sm-6">
+              <h6 class="about-cv-title">Interests</h6>
+              <ul class="about-cv-list">
+                {% for entry in about_interests %}
+                  <li>
+                    <strong>{{ entry.name }}</strong>{% if entry.keywords %}: {{ entry.keywords }}{% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
