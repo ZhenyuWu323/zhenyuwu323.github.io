@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Graduate student at <a href='#'>UC San Diego | ARCLab</a>.
+subtitle: Research Assistant at <a href='https://lab-idar.gatech.edu/'>Georgia Tech | LIDAR Lab</a>.
 profile:
   align: right
   image: prof_pic.jpg
@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Master's student at UC San Diego and a Graduate Student Researcher in the [Advanced Robotics and Controls Laboratory (ARClab)](https://ucsdarclab.com), advised by [Prof. Michael Yip](https://yip.eng.ucsd.edu). My current work primarily focuses on reinforcement learning for humanoid loco-manipulation. More broadly, I am interested in learning-based whole-body control for humanoid robots, with an emphasis on achieving precise, contact-rich interactions in real-world environments. 
+I am a Research Assistant in the [Laboratory for Intelligent Decision and Autonomous Robots (LIDAR)](https://lab-idar.gatech.edu/) at Georgia Tech, advised by [Prof. Ye Zhao](https://sites.google.com/site/yezhaout). Previously, I earned my Master's degree in Computer Science from UC San Diego, where I was a Graduate Student Researcher in the [Advanced Robotics and Controls Laboratory (ARClab)](https://ucsdarclab.com), advised by [Prof. Michael Yip](https://yip.eng.ucsd.edu). My current work primarily focuses on reinforcement learning for humanoid loco-manipulation. More broadly, I am interested in learning-based whole-body control for humanoid robots, with an emphasis on achieving precise, contact-rich interactions in real-world environments. 
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
