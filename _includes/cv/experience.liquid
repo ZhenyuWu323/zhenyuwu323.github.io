@@ -84,6 +84,20 @@
               {% endfor %}
             </ul>
           {% endif %}
+
+          {% comment %} Optional project groups: a project title followed by its own bullets {% endcomment %}
+          {% for project in entry.projects %}
+            <h6 class="ml-1 ml-md-4 mt-3 mb-1 font-weight-bold" style="font-size: 0.9rem">{{ project.name }}</h6>
+            {% if project.highlights %}
+              <ul class="items">
+                {% for item in project.highlights %}
+                  <li>
+                    <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </li>

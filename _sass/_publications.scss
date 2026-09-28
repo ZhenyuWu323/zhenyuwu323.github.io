@@ -43,6 +43,11 @@
         display: inline-block;
       }
 
+      video.preview {
+        width: 100%;
+        height: auto;
+      }
+
       .abbr {
         margin-bottom: 0.5rem;
 
@@ -69,6 +74,22 @@
 
       .title {
         font-weight: bolder;
+      }
+
+      .pub-highlight {
+        display: inline-block;
+        margin: 0.3rem 0;
+        padding: 0.15rem 0.6rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--global-award-text);
+        background: var(--global-award-bg);
+        border: 1px solid var(--global-award-color);
+        border-radius: 0.4rem;
+
+        i {
+          color: var(--global-award-color);
+        }
       }
 
       .author {

@@ -42,6 +42,9 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-award-color: #e0a100;
+  --global-award-bg: linear-gradient(90deg, #fff1c2, #fffaeb);
+  --global-award-text: #7a5300;
 
   #light-toggle-system {
     display: inline-block;
@@ -111,6 +114,9 @@ html[data-theme="dark"] {
   --global-danger-block-bg: #600;
   --global-danger-block-text: #ffb9b9;
   --global-danger-block-title: #ffe0e0;
+  --global-award-color: #ffc23d;
+  --global-award-bg: linear-gradient(90deg, rgba(255, 194, 61, 0.2), rgba(255, 194, 61, 0.05));
+  --global-award-text: #ffd66e;
 
   .only-light {
     display: none;

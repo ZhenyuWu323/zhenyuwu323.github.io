@@ -26,7 +26,17 @@
         {% endif %}
       {% endif %}
       {% if entry.preview %}
-        {% if entry.preview contains '://' %}
+        {% assign preview_ext = entry.preview | split: '.' | last | downcase %}
+        {% if preview_ext == 'mp4' or preview_ext == 'webm' %}
+          {% if entry.preview contains '://' %}
+            {% assign preview_src = entry.preview %}
+          {% else %}
+            {% assign preview_src = entry.preview | prepend: '/assets/img/publication_preview/' | relative_url %}
+          {% endif %}
+          <figure>
+            <video class="preview z-depth-1 rounded" src="{{ preview_src }}" autoplay muted loop playsinline></video>
+          </figure>
+        {% elsif entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
@@ -49,6 +59,10 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-9{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
+    <!-- Highlight (e.g. award finalist) -->
+    {% if entry.highlight %}
+      <div class="pub-highlight"><i class="fa-solid fa-trophy"></i> {{ entry.highlight }}</div>
+    {% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
