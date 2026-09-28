@@ -50,7 +50,7 @@ cv:
         start_date: 2026-07
         end_date: present
         summary: Laboratory for Intelligent Decision and Autonomous Robots (LIDAR), Advised by Prof. Ye Zhao
-        projects:
+        _projects:
           - name: "TAPNAV: Humanoid Navigation through Tactile Active Perception"
             highlights:
               - "Introduced a **humanoid tactile navigation** framework for vision-denied environments, where the robot localizes by actively probing nearby structures."
@@ -63,7 +63,7 @@ cv:
         start_date: 2024-09
         end_date: 2026-07
         summary: Advanced Robotics and Controls Laboratory (ARClab), Advised by Prof. Michael Yip
-        projects:
+        _projects:
           - name: "SteadyTray: Learning Object Balancing Tasks in Humanoid Tray Transport via Residual Reinforcement Learning"
             highlights:
               - "Introduced **ReST-RL**, a student-teacher residual RL framework that keeps unsecured objects on a tray stable while the humanoid walks and **actively rebalances them under disturbances**."
@@ -81,7 +81,7 @@ cv:
         start_date: 2023-09
         end_date: 2025-02
         summary: Seed Lab, Advised by Prof. Ning Li
-        projects:
+        _projects:
           - name: "Methods for Setting Device Specifications for Analog In-Memory Computing Inference"
             highlights:
               - "Introduced a systematic approach to **setting device specifications** for analog in-memory computing, identifying device parameters that keep DNN accuracy within 1% of floating point."
