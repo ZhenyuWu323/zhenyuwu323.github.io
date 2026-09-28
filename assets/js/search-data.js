@@ -28,16 +28,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-paper-steadytray-has-been-accepted-to-iros-2026-tada",
+          title: 'Our paper SteadyTray has been accepted to IROS 2026! :tada:',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-steadytray-has-been-selected-as-a-finalist-for-the-iros-best-application-icros-and-mobile-manipulation-omron-sinic-x-paper-awards-trophy",
+          title: 'SteadyTray has been selected as a finalist for the IROS Best Application (ICROS)...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-our-paper-oclo-on-dataset-free-compliant-humanoid-loco-manipulation-has-been-submitted-to-icra-2027",
+          title: 'Our paper OCLO on dataset-free compliant humanoid loco-manipulation has been submitted to ICRA...',
+          description: "",
+          section: "News",},{id: "news-our-paper-tapnav-on-humanoid-navigation-through-tactile-active-perception-has-been-submitted-to-icra-2027",
+          title: 'Our paper TAPNAV on humanoid navigation through tactile active perception has been submitted...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
