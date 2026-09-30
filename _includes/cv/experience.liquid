@@ -85,11 +85,8 @@
             </ul>
           {% endif %}
 
-          {% comment %}
-            Optional project groups: a project title followed by its own bullets.
-            The leading underscore makes RenderCV skip this web-only field, since it can't process lists of objects.
-          {% endcomment %}
-          {% for project in entry._projects %}
+          {% comment %} Optional project groups: a project title followed by its own bullets {% endcomment %}
+          {% for project in entry.projects %}
             <h6 class="ml-1 ml-md-4 mt-3 mb-1 font-weight-bold" style="font-size: 0.9rem">{{ project.name }}</h6>
             {% if project.highlights %}
               <ul class="items">
