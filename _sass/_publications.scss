@@ -78,7 +78,7 @@
 
       .pub-highlight {
         display: inline-block;
-        margin: 0.3rem 0;
+        margin: 0.3rem 0.4rem 0.3rem 0;
         padding: 0.15rem 0.6rem;
         font-size: 0.85rem;
         font-weight: 600;
@@ -89,6 +89,17 @@
 
         i {
           color: var(--global-award-color);
+        }
+      }
+
+      .pub-highlight-finalist {
+        font-weight: 500;
+        color: var(--global-finalist-text);
+        background: var(--global-finalist-bg);
+        border-color: var(--global-finalist-color);
+
+        i {
+          color: var(--global-finalist-color);
         }
       }
 

@@ -59,9 +59,12 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-9{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
-    <!-- Highlight (e.g. award finalist) -->
+    <!-- Highlights: an award won (gold) and/or an award finalist (silver) -->
     {% if entry.highlight %}
       <div class="pub-highlight"><i class="fa-solid fa-trophy"></i> {{ entry.highlight }}</div>
+    {% endif %}
+    {% if entry.finalist %}
+      <div class="pub-highlight pub-highlight-finalist"><i class="fa-solid fa-medal"></i> Finalist, {{ entry.finalist }}</div>
     {% endif %}
     <!-- Author -->
     <div class="author">

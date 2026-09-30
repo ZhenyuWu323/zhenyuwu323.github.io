@@ -45,6 +45,9 @@
   --global-award-color: #e0a100;
   --global-award-bg: linear-gradient(90deg, #fff1c2, #fffaeb);
   --global-award-text: #7a5300;
+  --global-finalist-color: #9aa3ad;
+  --global-finalist-bg: linear-gradient(90deg, #eceff3, #f8f9fb);
+  --global-finalist-text: #4a525c;
 
   #light-toggle-system {
     display: inline-block;
@@ -117,6 +120,9 @@ html[data-theme="dark"] {
   --global-award-color: #ffc23d;
   --global-award-bg: linear-gradient(90deg, rgba(255, 194, 61, 0.2), rgba(255, 194, 61, 0.05));
   --global-award-text: #ffd66e;
+  --global-finalist-color: #aeb6c0;
+  --global-finalist-bg: linear-gradient(90deg, rgba(174, 182, 192, 0.18), rgba(174, 182, 192, 0.05));
+  --global-finalist-text: #d5dbe2;
 
   .only-light {
     display: none;
