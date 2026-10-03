@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[SteadyTray](https://steadytray.github.io/) has been selected as a finalist for the **IROS Best Application (ICROS) and Mobile Manipulation (OMRON Sinic X) Paper Awards**! :trophy:
+[SteadyTray](https://steadytray.github.io/) has been selected as a finalist for the **IROS 2026 Best Mobile Manipulation Paper Award (OMRON Sinic X)**! :trophy:
