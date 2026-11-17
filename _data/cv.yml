@@ -188,9 +188,11 @@ cv:
     Interests:
       - name: Robot Learning
         icon: fa-solid fa-tag
-      - name: Humanoid Loco-manipulation
+      - name: Humanoid Whole-Body Control
         icon: fa-solid fa-tag
       - name: Dexterous Manipulation
+        icon: fa-solid fa-tag
+      - name: Tactile Sensing
         icon: fa-solid fa-tag
 
     # Certificates:
